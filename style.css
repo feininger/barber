@@ -1,0 +1,88 @@
+body {
+    background-image: url(img/barbershop-index.png);
+    background-position: top;
+    margin: 0;
+}
+
+.top {
+/*    outline: 2px solid red;*/
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.top-container {
+    outline: 2px solid yellow;
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-links {
+    outline: 2px solid green;
+    background-color: aqua;
+    min-height: 70px;
+}
+
+.top-links li{
+    display: inline;
+}
+
+.top-user {
+    outline: 2px solid green;
+    background-color: aqua;
+}
+
+.container {
+    outline: 2px solid magenta;
+    width: 940px;
+    margin: 0px auto;
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+}
+
+.logo {
+    outline: 3px solid aqua;
+    width: 368px;
+    height: 153px;
+    margin: 0 auto;
+    margin-bottom: 75px;
+}
+
+.benefits {
+    margin-bottom: 85px;
+}
+
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+}
+
+.benefits-item {
+    outline: 2px solid green;
+    width: 300px;
+    min-height: 165px;
+}
+
+.index-content {
+    outline: 4px solid pink;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+}
+
+.index-content-left {
+    outline: 2px solid green;
+    width: 380px;
+    
+}
+
+.index-content-right {
+    outline: 2px solid green;
+    width: 300px;
+}
