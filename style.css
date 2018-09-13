@@ -213,22 +213,50 @@ a.login {
     margin-bottom: 0px;
 }
 
+.gallery-box {
+    position: relative;
+    height: 260px;
+    background: rgba(255,45,82,0.2);
+}
+
+.gallery-prev,
+.gallery-next {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    
+    width: 135px;
+    margin: 0;
+}
+
+.gallery-prev {
+    left: 0;
+}
+
+.gallery-next {
+    right: 0;
+}
+
 .gallery-content {
     margin: 0 auto;
+    padding: 0;
+    margin-bottom: 37px;
 }
 
 .gallery-content img {
-    width: 100%;
     margin: 0 auto;
+    height: 164px;
+    border: 7px solid #ffffff;
+}
+
+.contacts {
+    font-weight: 400;
 }
 
 .btn {
     display: inline-block;
-/*    width: 140px;*/
-/*    min-height: 43px;*/
-    margin-right: 16px;
+/*    margin-right: 16px;*/
     padding: 10px 30px;
-
     
     font: inherit;
     text-align: center;
@@ -240,7 +268,6 @@ a.login {
 }
 
 .btn:hover,
-/*.btn:focus,*/
 .btn:active {
     background-color: #663d15;
 }
