@@ -155,6 +155,7 @@ a {
     font-size: 30px;
     padding: 0px;
     margin: 0px;
+    margin-bottom: 35px;
     
 }
 
@@ -169,18 +170,29 @@ a {
     width: 300px;
 }
 
-
 .news-preview {
     padding-left: 0px;
+    list-style: none;
 }
 
-.news-preview,
 .news-preview time {
+    text-transform: none;
+    margin-bottom: 20px;
     list-style: none;
 }
 
 .news-preview p {
-    
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.gallery-content {
+    margin: 0 auto;
+}
+
+.gallery-content img {
+    width: 100%;
+    margin: 0 auto;
 }
 
 .btn {
