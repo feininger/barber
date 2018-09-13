@@ -26,7 +26,7 @@ a {
     display: flex;
     justify-content: center;
     
-    margin-bottom: 60px;
+    margin-bottom: 49px;
     
     font-size: 16px;
     line-height: 20px;
@@ -101,13 +101,13 @@ a {
 .logo {
     outline: 3px solid aqua;
     width: 368px;
-    height: 153px;
+    height: 204px;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 29px;
 }
 
 .benefits {
-    margin-bottom: 85px;
+    margin-bottom: 80px;
 }
 
 .benefits-list {
@@ -128,25 +128,83 @@ a {
     font-size: 14px;
 }
 
+.benefits-item p{
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
 .benefits-name {
+    display: inline-block;
     font-size: 30px;
+    margin-bottom: 80px;
     
 }
 
 .index-content {
-    outline: 4px solid pink;
+    outline: 4px solid blue;
     display: flex;
     justify-content: space-between;
+    
+    min-height: 330px;
     padding: 50px 80px;
+    margin-bottom: 35px;
+}
+
+.index-content-title {
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+    
 }
 
 .index-content-left {
     outline: 2px solid green;
-    width: 380px;
+    width: 300px;
     
 }
 
 .index-content-right {
     outline: 2px solid green;
     width: 300px;
+}
+
+
+.news-preview {
+    padding-left: 0px;
+}
+
+.news-preview,
+.news-preview time {
+    list-style: none;
+}
+
+.news-preview p {
+    
+}
+
+.btn {
+    width: 140px;
+    min-height: 43px;
+/*    padding-top: 15px;*/
+/*    padding-bottom: 15px;*/
+    
+    font: inherit;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    
+    background-color: #000000;
+    border: none;
+}
+
+.btn:hover,
+/*.btn:focus,*/
+.btn:active {
+    background-color: #663d15;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
 }
