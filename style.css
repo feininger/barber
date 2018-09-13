@@ -73,21 +73,32 @@ a {
 }
 
 .top-user {
-    outline: 2px solid green;
-    padding-left: 10px;
-    background: rgba(234, 255, 45, 0.2);
-    position: relative;
+
 }
 
+a.login {
+    position: relative;
+    padding-left: 50px;
+}
 
-.top-user::before {
+.login::before {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 31px;
+    left: 26px;
     width: 16px;
     height: 18px;
-    background-color: red;
+    background-image:url(img/login.svg);
+    background-repeat: no-repeat;
+    background-position: 0,0;
+    opacity: 0.3;
+    
+}
+
+.login:hover::before,
+.login:focus::before,
+.login:active::before {
+    opacity: 1;
 }
 
 .container {
@@ -129,15 +140,30 @@ a {
 }
 
 .benefits-item p{
-    margin: 0;
+    margin: 0 10px;
     padding: 0;
     vertical-align: top;
 }
 
 .benefits-name {
     display: inline-block;
+    position: relative;
     font-size: 30px;
     margin-bottom: 80px;
+    
+}
+
+.benefits-name::after {
+    content: "";
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    
+    background-color: #ffffff;
     
 }
 
@@ -161,7 +187,7 @@ a {
 
 .index-content-left {
     outline: 2px solid green;
-    width: 300px;
+    width: 330px;
     
 }
 
@@ -172,6 +198,7 @@ a {
 
 .news-preview {
     padding-left: 0px;
+    margin-bottom: 37px;
     list-style: none;
 }
 
@@ -181,8 +208,8 @@ a {
     list-style: none;
 }
 
-.news-preview p {
-    margin-top: 30px;
+.index-content p {
+    margin-top: 20px;
     margin-bottom: 0px;
 }
 
@@ -196,10 +223,12 @@ a {
 }
 
 .btn {
-    width: 140px;
-    min-height: 43px;
-/*    padding-top: 15px;*/
-/*    padding-bottom: 15px;*/
+    display: inline-block;
+/*    width: 140px;*/
+/*    min-height: 43px;*/
+    margin-right: 16px;
+    padding: 10px 30px;
+
     
     font: inherit;
     text-align: center;
