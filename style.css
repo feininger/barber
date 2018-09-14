@@ -175,6 +175,13 @@ a.login {
     min-height: 330px;
     padding: 50px 80px;
     margin-bottom: 35px;
+    
+    background-color: #f7f4f1;
+    background-image:
+        url(img/box-shadow.png),
+        url(img/bg-pattern-light.jpg);
+    background-position: center, 0 0;
+    background-repeat: no-repeat, no-repeat;
 }
 
 .index-content-title {
@@ -206,6 +213,7 @@ a.login {
     text-transform: none;
     margin-bottom: 20px;
     list-style: none;
+    font-weight: 400;
 }
 
 .index-content p {
@@ -305,3 +313,66 @@ p.in-form {
     margin-top: 0;
     margin-bottom: 25px;
 }
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.address {
+    background-color: magenta;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    width: 141px;
+    justify-content: space-between;
+}
+
+.social b {
+    width: 100%;
+    text-align: center;
+    background-color: magenta;
+    margin-bottom: 20px;
+    
+}
+
+.social a {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.social a:hover {
+    background-color: white;
+}
+
+a.vk {
+    background-image: url(img/vk_white.svg);
+}
+
+a.vk:hover {
+    background-image: url(img/vk_black.svg);
+}
+
+a.fb {
+    background-image: url(img/facebook_white.svg);
+}
+
+a.fb:hover {
+    background-image: url(img/facebook_black.svg);
+}
+
+a.inst {
+    background-image: url(img/instagram_white.svg);
+}
+
+a.inst:hover {
+    background-image: url(img/instagram_black.svg);
+}
+
+
