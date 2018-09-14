@@ -198,7 +198,7 @@ a.login {
 
 .news-preview {
     padding-left: 0px;
-    margin-bottom: 37px;
+    margin-bottom: 20px;
     list-style: none;
 }
 
@@ -215,7 +215,7 @@ a.login {
 
 .gallery-box {
     position: relative;
-    height: 260px;
+    height: 250px;
     background: rgba(255,45,82,0.2);
 }
 
@@ -249,13 +249,14 @@ a.login {
     border: 7px solid #ffffff;
 }
 
-.contacts {
+p.contacts {
     font-weight: 400;
+    margin-bottom: 20px;
 }
 
 .btn {
     display: inline-block;
-/*    margin-right: 16px;*/
+    margin-right: 16px;
     padding: 10px 30px;
     
     font: inherit;
@@ -272,7 +273,35 @@ a.login {
     background-color: #663d15;
 }
 
-.flex {
+.form-flex {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-flex input{
+    box-sizing: border-box;
+    width: 140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    
+    margin-bottom: 19px;
+    
+    font: inherit;
+    text-transform: uppercase;
+    
+    border: 2px solid #000000;
+}
+
+.form-flex .btn{
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 0;
+}
+
+p.in-form {
+    margin-top: 0;
+    margin-bottom: 25px;
 }
