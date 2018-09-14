@@ -294,7 +294,6 @@ p.contacts {
     padding-right: 15px;
     padding-top: 7px;
     padding-bottom: 7px;
-    
     margin-bottom: 19px;
     
     font: inherit;
@@ -314,13 +313,20 @@ p.in-form {
     margin-bottom: 25px;
 }
 
+.footer {
+    margin-top: 60px;
+    padding-top: 1px;
+}
+
 .footer .container {
     display: flex;
     justify-content: space-between;
+    margin-top: 61px;
+    background: rgba(0,255,0,0.3);
 }
 
 .address {
-    background-color: magenta;
+    background: rgba(0,0,255,0.3);
 }
 
 .social {
@@ -333,8 +339,8 @@ p.in-form {
 .social b {
     width: 100%;
     text-align: center;
-    background-color: magenta;
     margin-bottom: 20px;
+    background: rgba(255,0,0,0.3);
     
 }
 
@@ -374,5 +380,3 @@ a.inst {
 a.inst:hover {
     background-image: url(img/instagram_black.svg);
 }
-
-
