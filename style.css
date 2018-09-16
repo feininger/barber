@@ -9,7 +9,6 @@ body {
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
-/*    color: #ffffff;*/
     text-transform: uppercase;
 }
 
@@ -92,7 +91,6 @@ a.login {
     background-repeat: no-repeat;
     background-position: 0,0;
     opacity: 0.3;
-    
 }
 
 .login:hover::before,
@@ -104,8 +102,6 @@ a.login {
 .container {
     width: 940px;
     margin: 0px auto;
-/*    display: flex;*/
-/*    justify-content: space-between;*/
 }
 
 .logo {
@@ -213,7 +209,6 @@ a.login {
 .gallery-box {
     position: relative;
     height: 250px;
-    background: rgba(255,45,82,0.2);
 }
 
 .gallery-prev,
