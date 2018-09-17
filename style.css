@@ -399,3 +399,154 @@ a.inst:hover {
     color: #000000;
     background-color: white;
 }
+
+.modal {
+    position: fixed;
+    display: none;
+    color: #000000;
+    
+    background-color: #f7f4f1;
+    background-image: url(img/bg-pattern-light.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-login {
+    box-sizing: border-box;
+    top: 120px;
+    left: 50%;
+    margin-left: -230px;
+    
+    width: 460px;
+    height: 385px;
+    padding: 50px 80px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: -34px;
+    
+    width: 22px;
+    height: 22px;
+    
+    font-size: 0;
+    
+    border: 0;
+    background-color: transparent;
+    cursor: pointer; 
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 3px;
+    
+    top: 9px;
+    left: 0px;
+    
+    background-color: #d1d1d1;
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal p {
+    margin: 0;
+}
+
+p.description {
+    margin-bottom: 10px;
+}
+
+.modal h2 {
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+.modal input{
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 19px;
+    
+    font: inherit;
+    text-transform: uppercase;
+    
+    border: 2px solid #000000;
+}
+
+input.login-input,
+input.password-input {
+    padding-right: 30px;
+    text-transform: none;
+}
+
+.login-input {
+    background-image: url(img/user.svg);
+    background-position: 270px center;
+    background-repeat: no-repeat;
+}
+
+.password-input {
+    background-image: url(img/lock.svg);
+    background-position: 270px center;
+    background-repeat: no-repeat;
+}
+
+.checkbox-input {
+    display: none;
+/*    visibility: hidden;*/
+}
+
+.checkbox-label {
+    position: relative;
+    padding-left: 30px;
+/*    cursor: pointer;*/
+}
+
+.checkbox-img {
+/*    display: block;*/
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    margin-right: 1px;
+}
+
+.checkbox-label input[type="checkbox"]:checked +.checkbox-img {
+    background-image: url(img/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+p.user-elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+
+.restore {
+    color: #000000;
+    text-decoration: underline;
+}

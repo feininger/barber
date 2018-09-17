@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-       <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
         <title>Барбершоп «Бородинский»</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
@@ -96,7 +96,7 @@
                         <input type="text" name="time" placeholder="Время">
                         <input type="text" name="name" placeholder="Имя">
                         <input type="tel" name="tel" placeholder="Телефон">
-                        <button type="submit" class="btn">Отправить</button>
+                        <button type="button" class="btn">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                 <div class="address">
                     <p>
                         Барбершоп «Бородинский»
-                        <br> Адрес: г. Москва, Остоженка, д. 1/9
+                        <br> Адрес: Москва, Остоженка, д. 1/9
                         <br> <a href="#">Как нас найти?</a>
                         <br> Телефон: +7 (999) 123-45-67
                     </p>
@@ -123,5 +123,27 @@
                 </div>
             </div>
         </div>
+        <div class="modal modal-login">
+            <h2>Личный кабинет</h2>
+            <p class="description">Введите пожалуйста свой логин и пароль</p>
+            <form class="login-form" action="echo.htmlacademy.ru" method="post">
+            <p>
+                <input class="login-input" type="text" name="login" placeholder="ЛОГИН">
+            </p>
+            <p>
+                <input class="password-input" type="password" name="password" placeholder="ПАРОЛЬ">
+            </p>
+            <p class="user-elements">
+                <label class="checkbox-label" for="checkbox-input" >
+                    <input class="checkbox-input" type="checkbox" name="checkbox" id="checkbox-input">
+                    <span class="checkbox-img"></span>Запомните меня
+                </label>
+                <a href="#" class="restore">Я забыл пароль!</a>
+            </p>
+            <button class="btn" type="button">Войти</button>
+            </form>
+            <button class="modal-close" type="button"></button>
+        </div>
+        <script src="s.js"></script>
     </body> 
 </html>
