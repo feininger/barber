@@ -63,6 +63,12 @@ a {
     font-weight: bold;
 }
 
+a.link-logo{
+    box-sizing: border-box;
+    padding-bottom: 0;
+    min-height: 80px;
+}
+
 .top a:hover{
     background-color: #242424;
 }
@@ -549,4 +555,199 @@ p.user-elements {
 .restore {
     color: #000000;
     text-decoration: underline;
+}
+
+/* for shop pages*/
+
+body.inner {
+    background-image: url(img/bg-pattern-light.jpg);
+    
+}
+
+.inner .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.shop-nav {
+    width: 100%;
+}
+
+.shop-filters {
+    width: 220px;
+}
+
+.shop-content {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: flex-start;
+    width: 700px;
+}
+
+.shop-item {
+/*    position: relative;*/
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.shop-item:hover {
+    transform: scale(1.02);
+}
+
+.shop-item:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.shop-item img {
+    width: 220px;
+    height: 165;
+}
+
+.shop-item p {
+    padding: 16px;
+    padding-bottom: 0;
+    margin: 0px;
+}
+
+.price-and-button {
+/*    position: absolute;*/
+    left: 16px;
+    bottom: 16px;
+    padding: 16px;
+}
+
+.price-and-button p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.price-and-button .price {
+    box-sizing: border-box;
+    float: left;
+    padding: 10px;
+    width: 109px;
+    height: 43px;
+    text-align: center;
+    background-color: #e5e5e5;
+}
+
+.price-and-button .btn {
+    margin: 0;
+    padding: 10px;
+    width: 78px;
+    height: 43px;
+    background-color: #000000;
+}
+
+.price-and-button .btn:hover,
+.price-and-button .btn:active {
+    background-color: #663d15;
+}
+
+.pagination ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 25px;
+    padding: 0;
+}
+
+.pagination li{
+    list-style: none;
+}
+
+.pagination a{
+    box-sizing: border-box;
+    display: block;
+    min-width: 43px;
+    height: 43px;
+    padding-top: 10px;
+    margin-right: 7px;
+    text-align: center;
+    
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    
+    background-color: #000000;
+}
+
+.pagination a.current{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.shop-nav h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+.breadcrumbs ul{
+    display: flex;
+    margin: 0;
+    margin-top: 18px;
+    margin-bottom:25px;
+    padding: 0;
+}
+
+.breadcrumbs li{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-left: 34px;
+    list-style: none;
+}
+
+.breadcrumbs a{
+    color:#000000;
+}
+
+.breadcrumbs a.current{
+    color:#aba9a7;
+}
+
+.breadcrumbs li:first-child{
+    padding-left: 0px;
+}
+
+.breadcrumbs li::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    
+    top: 8px;
+    left: 15px;
+    
+    transform: rotate(45deg);
+    background-color: #000000;
+}
+
+.breadcrumbs li:first-child::before{
+    width: 0;
+    height: 0;
+}
+
+.shop-filters p{
+    margin-top: 17px;
+    margin-bottom: 17px;
+    
+}
+
+.shop-filters .checkbox-label {
+    padding-left: 46px;
+}
+
+.shop-filters h3 {
+    font-size: 24px;
 }
