@@ -244,9 +244,18 @@ button.gallery-next {
 }
 
 .gallery-content img {
+    display: none;
     margin: 0 auto;
     height: 164px;
     border: 7px solid #ffffff;
+}
+
+.img-hidden {
+    display: none;
+}
+
+img.img-show {
+    display: block;
 }
 
 p.contacts {
