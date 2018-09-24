@@ -860,3 +860,20 @@ body.inner {
     border: 2px solid black;
 }
 
+/* for contacts page*/
+
+.contacts-for-map {
+    display: flex;
+    
+}
+
+.for-map {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+.map {
+    border: 7px solid #ffffff;
+}
