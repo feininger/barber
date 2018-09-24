@@ -85,7 +85,7 @@
                             <br> сб—вс: с 10:00 до 19:00
                         </p>
                         <a class="btn map-btn" href="#">Как проехать</a>
-                        <a class="btn" href="#">Обратная связь</a>
+                        <a class="btn feedback-btn" href="#">Обратная связь</a>
                 </div>
                 <div class="index-content-right">
                     <h2 class="index-content-title">Записаться</h2>
@@ -95,7 +95,7 @@
                         <input type="text" name="time" placeholder="Время">
                         <input type="text" name="name" placeholder="Имя">
                         <input type="tel" name="tel" placeholder="Телефон">
-                        <button type="button" class="btn">Отправить</button>
+                        <button type="submit" class="btn">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -140,6 +140,28 @@
                 <a href="#" class="restore">Я забыл пароль!</a>
             </p>
             <button class="btn" type="button">Войти</button>
+            </form>
+            <button class="modal-close" type="button"></button>
+        </div>
+        <div class="modal modal-feedback">
+            <h2>Обратная связь</h2>
+            <p class="description">Помогите нам стать лучше!</p>
+            <form class="feedback-form" action="echo.htmlacademy.ru" method="post">
+            <p>
+                <input type="text" name="login" placeholder="Ваше имя" required>
+            </p>            
+            <p>
+                <input type="email" name="login" placeholder="Почта" required>
+            </p>            
+            <p>
+                <input type="tel" name="login" placeholder="Телефон" required>
+            </p>            
+            <p>
+                <textarea class="input-textarea" name="feedback"  cols="40" rows="7" placeholder="Сообщение" required></textarea>
+            </p>
+
+
+            <button class="btn" type="submit">Отправить</button>
             </form>
             <button class="modal-close" type="button"></button>
         </div>

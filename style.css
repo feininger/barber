@@ -434,6 +434,17 @@ a.inst:hover {
     padding: 50px 80px;
 }
 
+.modal-feedback {
+    box-sizing: border-box;
+    top: 120px;
+    left: 50%;
+    margin-left: -230px;
+    
+    width: 460px;
+    height: 600px;
+    padding: 50px 80px;
+}
+
 .modal-map {
     box-sizing: border-box;
     top: 120px;
@@ -527,6 +538,21 @@ input.password-input {
     background-image: url(img/lock.svg);
     background-position: 270px center;
     background-repeat: no-repeat;
+}
+
+.input-textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 19px;
+    
+    font: inherit;
+    text-transform: uppercase;
+    
+    border: 2px solid #000000;
 }
 
 .checkbox-input {
