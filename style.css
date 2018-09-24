@@ -857,6 +857,7 @@ body.inner {
 .custom-list-1 {
     list-style: none;
     margin-top: 0;
+    padding-left: 0;
 }
 
 .custom-list-1 li{
