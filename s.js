@@ -3,8 +3,11 @@
     var close = popup.querySelector(".modal-close");
 
     var mapButton = document.querySelector(".map-btn");
+    var mapLink = document.querySelector(".map-link");
     var map = document.querySelector(".modal-map");
-    var mapClose = map.querySelector(".modal-close");
+    if (map){
+        var mapClose = map.querySelector(".modal-close");
+    }
 
     link.addEventListener("click", function (event) {
         event.preventDefault();
@@ -17,6 +20,11 @@
     });
 
     mapButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        map.classList.add("modal-show");
+    });
+
+    mapLink.addEventListener("click", function (event) {
         event.preventDefault();
         map.classList.add("modal-show");
     });
