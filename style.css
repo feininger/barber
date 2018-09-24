@@ -751,3 +751,112 @@ body.inner {
 .shop-filters h3 {
     font-size: 24px;
 }
+
+/* for price pages*/
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.column-1 {
+    width: 460px;
+}
+
+.column-2 {
+    width: 460px;
+}
+
+.columns h2:first-child {
+    width: 100%;
+    margin-top: 0;
+}
+
+.columns h2 {
+    width: 240px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.column-1 *:first-child,
+.column-2 *:first-child {
+    margin-top: 0;
+}
+
+.big-heading {
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    margin-bottom: 53px;
+    
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.big-heading::before,
+.big-heading::after {
+    content: "";
+    
+    flex-grow: 1;
+    flex-shrink: 0;
+    
+    width: 50px;
+    height: 2px;
+    
+    background: #000000;
+}
+
+.big-heading::before {
+    margin-right: 25px;
+}
+
+.big-heading::after {
+    margin-left: 25px;
+}
+
+.custom-list-1 {
+    list-style: none;
+    margin-top: 0;
+}
+
+.custom-list-1 li{
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.custom-list-1 li::before {
+    content: "";
+    position: absolute;
+    
+    top: 8px;
+    left: 0;
+    
+    width: 8px;
+    height: 8px;
+    
+    background: #000000;
+    transform: rotate(45deg);
+}
+
+.custom-table-1 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.custom-table-1 td{
+    width: 50%;
+}
+
+.custom-table-1 td:nth-last-child(1){
+    text-align: center;
+}
+
+.custom-table-1 td{
+    padding: 13px;
+    border: 2px solid black;
+}
+
