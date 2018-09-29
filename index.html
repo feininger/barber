@@ -127,12 +127,12 @@
         <div class="modal modal-login">
             <h2>Личный кабинет</h2>
             <p class="description">Введите пожалуйста свой логин и пароль</p>
-            <form class="login-form" action="echo.htmlacademy.ru" method="post">
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
             <p>
-                <input class="login-input" type="text" name="login" placeholder="ЛОГИН">
+                <input class="login-input" type="text" name="login" placeholder="ЛОГИН" required>
             </p>
             <p>
-                <input class="password-input" type="password" name="password" placeholder="ПАРОЛЬ">
+                <input class="password-input" type="password" name="password" placeholder="ПАРОЛЬ" required>
             </p>
             <p class="user-elements">
                 <label class="checkbox-label" for="checkbox-input" >
@@ -141,22 +141,22 @@
                 </label>
                 <a href="#" class="restore">Я забыл пароль!</a>
             </p>
-            <button class="btn" type="button">Войти</button>
+            <button class="btn" type="submit">Войти</button>
             </form>
             <button class="modal-close" type="button"></button>
         </div>
         <div class="modal modal-feedback">
             <h2>Обратная связь</h2>
             <p class="description">Помогите нам стать лучше!</p>
-            <form class="feedback-form" action="echo.htmlacademy.ru" method="post">
+            <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
             <p>
-                <input type="text" name="login" placeholder="Ваше имя" required>
+                <input type="text" name="feedback-name" placeholder="Ваше имя" required>
             </p>            
             <p>
-                <input type="email" name="login" placeholder="Почта" required>
+                <input type="email" name="feedback-email" placeholder="Почта" required>
             </p>            
             <p>
-                <input type="tel" name="login" placeholder="Телефон" required>
+                <input type="tel" name="feedback-tel" placeholder="Телефон" required>
             </p>            
             <p>
                 <textarea class="input-textarea" name="feedback"  cols="40" rows="7" placeholder="Сообщение" required></textarea>
